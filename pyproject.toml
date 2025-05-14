@@ -1,0 +1,17 @@
+[project]
+name = "gumcp"
+version = "0.1.0"
+description = "A way to install GumCP as a package through uv"
+readme = "README.MD"
+requires-python = ">=3.12"
+dynamic = ["dependencies"]
+
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt", "pip-tools"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]

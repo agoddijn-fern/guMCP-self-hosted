@@ -78,7 +78,7 @@ def generate_server_list(output_path: str) -> bool:
     """
     try:
         root_dir = Path(__file__).parent.parent
-        servers_dir = root_dir / "src" / "servers"
+        servers_dir = root_dir / "src" / "gumcp" / "servers"
 
         if not servers_dir.exists():
             logger.error(f"Servers directory not found at {servers_dir}")

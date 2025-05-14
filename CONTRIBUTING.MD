@@ -125,7 +125,7 @@ For local development and usage with OAuth-based integrations, we use the `Local
    You can retrieve them in your code:
 
    ```python
-   from src.auth.factory import create_auth_client
+   from ...auth.factory import create_auth_client
 
    auth_client = create_auth_client()
    credentials = auth_client.get_user_credentials("service_name", "user_id")
