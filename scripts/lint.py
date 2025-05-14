@@ -20,7 +20,7 @@ ROOT_DIR = Path(__file__).parent.parent.absolute()
 
 # Directories to check
 CHECK_DIRS = [
-    ROOT_DIR / "src",
+    ROOT_DIR / "src" / "gumcp",
     ROOT_DIR / "tests",
 ]
 
