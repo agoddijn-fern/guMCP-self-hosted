@@ -1,5 +1,5 @@
 [project]
-name = "src"
+name = "gumcp-package"
 version = "0.1.0"
 description = "A way to install GumCP as a package through uv"
 readme = "README.MD"
