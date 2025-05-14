@@ -13,8 +13,8 @@ build-backend = "hatchling.build"
 [tool.hatch.build.sources]
 "gumcp-package" = "src"
 
-[tool.hatch.build.targets.wheel]
-packages = ["gumcp-package"]
+[tool.hatch.build.targets.wheel.force-include]
+"src/" = "gumcp_package"
 
 [tool.hatch.metadata]
 allow-direct-references = true
