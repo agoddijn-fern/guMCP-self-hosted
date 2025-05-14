@@ -15,3 +15,8 @@ allow-direct-references = true
 
 [tool.hatch.metadata.hooks.requirements_txt]
 files = ["requirements.txt"]
+
+[dependency-groups]
+scripts = [
+    "pyyaml>=6.0.2",
+]
