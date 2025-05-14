@@ -1,0 +1,47 @@
+[project]
+name = "src"
+version = "0.1.0"
+description = "A way to install GumCP as a package through uv"
+readme = "README.MD"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp",
+    "anthropic==0.49.0",
+    "beautifulsoup4",
+    "google-api-python-client",
+    "google-auth",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+    "mcp==1.4.1",
+    "notion-client",
+    "slack-sdk",
+    "prometheus-client",
+    "python-dotenv",
+    "python-quickbooks",
+    "starlette",
+    "uvicorn",
+    "requests",
+    "google",
+    "stripe",
+    "PyGithub",
+    "googlemaps",
+    "dropbox",
+    "browserbase",
+    "playwright",
+    "snowflake-connector-python",
+    "simple-salesforce",
+    "twilio",
+    "python-docx",
+    "mailchimp_marketing",
+    "mailerlite",
+    "atproto",
+    "httpcore>=1.0.9",
+    "h11>=0.16.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
